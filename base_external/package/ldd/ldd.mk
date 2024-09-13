@@ -4,8 +4,8 @@
 #
 ################################################################################
 
-LDD_VERSION = 718cbdf
-LDD_SITE = 'git@github.com:cu-ecen-aeld/assignment-7-calvarado2004.git'
+LDD_VERSION = ad691a8
+LDD_SITE = git@github.com:cu-ecen-aeld/assignment-7-calvarado2004.git
 LDD_INSTALL_TARGET = YES
 LDD_SITE_METHOD = git
 LDD_GIT_SUBMODULES = YES
