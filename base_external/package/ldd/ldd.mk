@@ -11,7 +11,7 @@ LDD_SITE_METHOD = git
 LDD_GIT_SUBMODULES = YES
 
 define LDD_BUILD_CMDS
-	$(MAKE) -C $(INSTALL) clean all
+	$(MAKE) -C $(TARGET_CC) clean all
 endef
 
 define LDD_INSTALL_TARGET_CMDS
