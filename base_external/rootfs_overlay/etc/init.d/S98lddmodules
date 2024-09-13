@@ -1,0 +1,18 @@
+#!/bin/sh
+
+case "$1" in
+  start)
+    /path/to/scull_load
+    /path/to/module_load
+    modprobe hello
+    ;;
+  stop)
+    /path/to/scull_unload
+    /path/to/module_unload
+    rmmod hello
+    ;;
+  *)
+    echo "Usage: $0 {start|stop}"
+    exit 1
+esac
+exit 0
