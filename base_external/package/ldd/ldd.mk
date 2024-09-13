@@ -10,9 +10,9 @@ LDD_INSTALL_TARGET = YES
 LDD_SITE_METHOD = git
 LDD_GIT_SUBMODULES = YES
 
-define LDD_BUILD_CMDS
-   echo "doing nothing"
-endef
+LDD_MODULE_SUBDIRS = scull
+LDD_MODULE_SUBDIRS += misc-modules
+
 
 define LDD_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/misc-modules/module_load $(TARGET_DIR)/usr/bin
